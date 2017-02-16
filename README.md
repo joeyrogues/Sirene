@@ -8,13 +8,11 @@ Example d'usage :
 ```
 var Sirene = require('./lib/Sirene')
 
-Sirene.Record.all({
-	rows: 5
-})
+Sirene.Record.all().rows(4)
 .then(entities => {
-	console.log(entities.length)
+	console.log(entities.records)
 })
 .catch(error => {
-	console.error(error)
+	console.log(error)
 })
 ```
